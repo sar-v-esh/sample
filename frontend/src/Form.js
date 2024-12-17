@@ -38,7 +38,9 @@ const Form = () => {
   } = useForm({ resolver: yupResolver(schema) });
   const fetchEmployees = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/employees");
+      const response = await axios.get(
+        "https://fsd-five.vercel.app/api/employees"
+      );
       setEmployees(response.data);
       setMessage("Data fetched successfully!");
     } catch (error) {
@@ -48,7 +50,9 @@ const Form = () => {
   };
   const deleteEmployee = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/employees/${employeeId}`);
+      await axios.delete(
+        `https://fsd-five.vercel.app/api/employees/${employeeId}`
+      );
       setMessage("Employee deleted successfully!");
       fetchEmployees();
     } catch (error) {
@@ -59,7 +63,7 @@ const Form = () => {
 
   const onSubmit = async (data) => {
     try {
-      await axios.post("http://localhost:5000/api/employees", data);
+      await axios.post("https://fsd-five.vercel.app/api/employees", data);
       setMessage("Employee added successfully!");
       fetchEmployees();
     } catch (error) {
