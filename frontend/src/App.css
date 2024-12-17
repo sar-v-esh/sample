@@ -1,0 +1,77 @@
+/* Container Styling */
+.container {
+  max-width: 800px; /* Expand the container width */
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Add light background for better look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two-column layout */
+  gap: 15px; /* Add spacing between inputs */
+}
+
+/* Input Styling */
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.delete{
+  width:30%;
+  
+}
+/* Full-width fields */
+.full-width {
+  grid-column: span 2; /* Make input span two columns */
+}
+
+/* Button Styling */
+.button-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.submit-button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background-color: #45a049;
+}
+.inp{
+  height:30px;
+}
+/* Table Styling */
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.employee-table th,
+.employee-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.employee-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
